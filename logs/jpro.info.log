@@ -1,0 +1,563 @@
+2025-05-22 01:09:21,156 [INFO] from com.jpro.activity in scala-execution-context-global-36 - Starting the server
+2025-05-22 01:09:21,161 [INFO] from com.jpro.internal.server.JProInitializer$ in scala-execution-context-global-36 -  *** Starting JPro: https://www.jpro.one/ ***
+2025-05-22 01:09:21,161 [INFO] from com.jpro.internal.server.JProInitializer$ in scala-execution-context-global-36 - OS: Windows 10
+2025-05-22 01:09:21,191 [INFO] from com.jpro.internal.server.JProInitializer$ in scala-execution-context-global-36 - JPro: 2024.4.1
+2025-05-22 01:09:21,191 [INFO] from com.jpro.internal.server.JProInitializer$ in scala-execution-context-global-36 - Java version: 21.0.5
+2025-05-22 01:09:21,191 [INFO] from com.jpro.internal.server.JProInitializer$ in scala-execution-context-global-36 - JVM: 21.0.5 BellSoft
+2025-05-22 01:09:21,194 [INFO] from com.jpro.internal.server.JProInitializer$ in scala-execution-context-global-36 - JavaFX jar: file:/C:/Users/kenan/.m2/repository/org/openjfx/javafx-graphics/23.0.1-jpro/javafx-graphics-23.0.1-jpro-win.jar
+2025-05-22 01:09:21,195 [INFO] from com.jpro.internal.server.JProInitializer$ in scala-execution-context-global-36 - Configuring logging from url: 'jar:file:/C:/Users/kenan/.m2/repository/one/jpro/jpro-server_2.12/2024.4.1/jpro-server_2.12-2024.4.1.jar!/logback-jpro-default.xml'
+2025-05-22 01:09:22,117 [INFO] from com.jpro.internal.server.JProInitializer$ in JavaFX Application Thread - JavaFX version: 23.0.1-jpro+0
+2025-05-22 01:09:22,169 [INFO] from com.jpro.internal.server.JProInitializer$ in scala-execution-context-global-36 - finished init!
+2025-05-22 01:09:22,174 [INFO] from com.jpro.internal.server.JProInitializer$ in scala-execution-context-global-36 - [JPro] -> Server started: {start_time: 1747868961153, os_name: Windows 10, jpro_version: 2024.4.1}
+2025-05-22 01:09:22,220 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2025-05-22 01:09:22,918 [INFO] from play.api.Play in Thread-0 - Application started (Prod) (no global state)
+2025-05-22 01:09:23,504 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Enabling HTTP/2 on Akka HTTP server...
+2025-05-22 01:09:23,505 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Listening for HTTP on /[0:0:0:0:0:0:0:0]:8080
+2025-05-22 01:09:24,814 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - application requested: default params: Map()
+2025-05-22 01:09:24,818 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - Creating Application: default
+2025-05-22 01:09:24,822 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - remoteAddress 0:0:0:0:0:0:0:1
+2025-05-22 01:09:24,822 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - host          localhost:8080
+2025-05-22 01:09:24,822 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - uri           /app/ws/default
+2025-05-22 01:09:25,020 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.ClassNotFoundException: com.webares.webares.HelloApplication
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at simplefx.util.ReflectionUtil.loadClass(ReflectionUtil.scala:38)
+	at simplefx.util.ReflectionUtil.callNew(ReflectionUtil.scala:103)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:109)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:95)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:61)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:43)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:178)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$handleFirstClientMessage$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:84)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$3.run(CoreTimeEvent.scala:62)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:457)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:456)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-05-22 01:09:27,045 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - application requested: default params: Map()
+2025-05-22 01:09:27,045 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - Creating Application: default
+2025-05-22 01:09:27,046 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - remoteAddress 0:0:0:0:0:0:0:1
+2025-05-22 01:09:27,046 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - host          localhost:8080
+2025-05-22 01:09:27,046 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - uri           /app/ws/default
+2025-05-22 01:09:27,056 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.ClassNotFoundException: com.webares.webares.HelloApplication
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at simplefx.util.ReflectionUtil.loadClass(ReflectionUtil.scala:38)
+	at simplefx.util.ReflectionUtil.callNew(ReflectionUtil.scala:103)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:109)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:95)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:61)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:43)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:178)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$handleFirstClientMessage$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:84)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$3.run(CoreTimeEvent.scala:62)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:457)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:456)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-05-22 01:09:29,070 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - application requested: default params: Map()
+2025-05-22 01:09:29,070 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - Creating Application: default
+2025-05-22 01:09:29,070 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - remoteAddress 0:0:0:0:0:0:0:1
+2025-05-22 01:09:29,070 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - host          localhost:8080
+2025-05-22 01:09:29,070 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - uri           /app/ws/default
+2025-05-22 01:09:29,079 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.ClassNotFoundException: com.webares.webares.HelloApplication
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at simplefx.util.ReflectionUtil.loadClass(ReflectionUtil.scala:38)
+	at simplefx.util.ReflectionUtil.callNew(ReflectionUtil.scala:103)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:109)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:95)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:61)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:43)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:178)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$handleFirstClientMessage$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:84)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$3.run(CoreTimeEvent.scala:62)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:457)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:456)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-05-22 01:09:31,089 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - application requested: default params: Map()
+2025-05-22 01:09:31,089 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - Creating Application: default
+2025-05-22 01:09:31,090 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - remoteAddress 0:0:0:0:0:0:0:1
+2025-05-22 01:09:31,090 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - host          localhost:8080
+2025-05-22 01:09:31,090 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - uri           /app/ws/default
+2025-05-22 01:09:31,098 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.ClassNotFoundException: com.webares.webares.HelloApplication
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at simplefx.util.ReflectionUtil.loadClass(ReflectionUtil.scala:38)
+	at simplefx.util.ReflectionUtil.callNew(ReflectionUtil.scala:103)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:109)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:95)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:61)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:43)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:178)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$handleFirstClientMessage$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:84)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$3.run(CoreTimeEvent.scala:62)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:457)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:456)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-05-22 01:09:33,108 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - application requested: default params: Map()
+2025-05-22 01:09:33,108 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - Creating Application: default
+2025-05-22 01:09:33,109 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - remoteAddress 0:0:0:0:0:0:0:1
+2025-05-22 01:09:33,109 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - host          localhost:8080
+2025-05-22 01:09:33,109 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - uri           /app/ws/default
+2025-05-22 01:09:33,116 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.ClassNotFoundException: com.webares.webares.HelloApplication
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at simplefx.util.ReflectionUtil.loadClass(ReflectionUtil.scala:38)
+	at simplefx.util.ReflectionUtil.callNew(ReflectionUtil.scala:103)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:109)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:95)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:61)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:43)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:178)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$handleFirstClientMessage$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:84)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$3.run(CoreTimeEvent.scala:62)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:457)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:456)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-05-22 01:09:35,126 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - application requested: default params: Map()
+2025-05-22 01:09:35,126 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - Creating Application: default
+2025-05-22 01:09:35,126 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - remoteAddress 0:0:0:0:0:0:0:1
+2025-05-22 01:09:35,127 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - host          localhost:8080
+2025-05-22 01:09:35,127 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - uri           /app/ws/default
+2025-05-22 01:09:35,134 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.ClassNotFoundException: com.webares.webares.HelloApplication
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at simplefx.util.ReflectionUtil.loadClass(ReflectionUtil.scala:38)
+	at simplefx.util.ReflectionUtil.callNew(ReflectionUtil.scala:103)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:109)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:95)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:61)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:43)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:178)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$handleFirstClientMessage$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:84)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$3.run(CoreTimeEvent.scala:62)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:457)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:456)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-05-22 01:09:37,147 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - application requested: default params: Map()
+2025-05-22 01:09:37,147 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - Creating Application: default
+2025-05-22 01:09:37,147 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - remoteAddress 0:0:0:0:0:0:0:1
+2025-05-22 01:09:37,147 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - host          localhost:8080
+2025-05-22 01:09:37,147 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - uri           /app/ws/default
+2025-05-22 01:09:37,154 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.ClassNotFoundException: com.webares.webares.HelloApplication
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at simplefx.util.ReflectionUtil.loadClass(ReflectionUtil.scala:38)
+	at simplefx.util.ReflectionUtil.callNew(ReflectionUtil.scala:103)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:109)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:95)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:61)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:43)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:178)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$handleFirstClientMessage$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:84)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$3.run(CoreTimeEvent.scala:62)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:457)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:456)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-05-22 01:09:39,165 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - application requested: default params: Map()
+2025-05-22 01:09:39,165 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - Creating Application: default
+2025-05-22 01:09:39,165 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - remoteAddress 0:0:0:0:0:0:0:1
+2025-05-22 01:09:39,165 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - host          localhost:8080
+2025-05-22 01:09:39,165 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - uri           /app/ws/default
+2025-05-22 01:09:39,173 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.ClassNotFoundException: com.webares.webares.HelloApplication
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at simplefx.util.ReflectionUtil.loadClass(ReflectionUtil.scala:38)
+	at simplefx.util.ReflectionUtil.callNew(ReflectionUtil.scala:103)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:109)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:95)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:61)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:43)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:178)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$handleFirstClientMessage$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:84)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$3.run(CoreTimeEvent.scala:62)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:457)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:456)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-05-22 01:09:41,191 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - application requested: default params: Map()
+2025-05-22 01:09:41,191 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - Creating Application: default
+2025-05-22 01:09:41,192 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - remoteAddress 0:0:0:0:0:0:0:1
+2025-05-22 01:09:41,192 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - host          localhost:8080
+2025-05-22 01:09:41,192 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - uri           /app/ws/default
+2025-05-22 01:09:41,200 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.ClassNotFoundException: com.webares.webares.HelloApplication
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at simplefx.util.ReflectionUtil.loadClass(ReflectionUtil.scala:38)
+	at simplefx.util.ReflectionUtil.callNew(ReflectionUtil.scala:103)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:109)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:95)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:61)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:43)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:178)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$handleFirstClientMessage$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:84)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$3.run(CoreTimeEvent.scala:62)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:457)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:456)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-05-22 01:09:43,212 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - application requested: default params: Map()
+2025-05-22 01:09:43,213 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - Creating Application: default
+2025-05-22 01:09:43,213 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - remoteAddress 0:0:0:0:0:0:0:1
+2025-05-22 01:09:43,213 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - host          localhost:8080
+2025-05-22 01:09:43,213 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - uri           /app/ws/default
+2025-05-22 01:09:43,219 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.ClassNotFoundException: com.webares.webares.HelloApplication
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at simplefx.util.ReflectionUtil.loadClass(ReflectionUtil.scala:38)
+	at simplefx.util.ReflectionUtil.callNew(ReflectionUtil.scala:103)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:109)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:95)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:61)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:43)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:178)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$handleFirstClientMessage$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:84)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$3.run(CoreTimeEvent.scala:62)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:457)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:456)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-05-22 01:09:45,228 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - application requested: default params: Map()
+2025-05-22 01:09:45,228 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - Creating Application: default
+2025-05-22 01:09:45,228 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - remoteAddress 0:0:0:0:0:0:0:1
+2025-05-22 01:09:45,228 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - host          localhost:8080
+2025-05-22 01:09:45,228 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - uri           /app/ws/default
+2025-05-22 01:09:45,236 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.ClassNotFoundException: com.webares.webares.HelloApplication
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at simplefx.util.ReflectionUtil.loadClass(ReflectionUtil.scala:38)
+	at simplefx.util.ReflectionUtil.callNew(ReflectionUtil.scala:103)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:109)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:95)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:61)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:43)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:178)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$handleFirstClientMessage$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:84)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$3.run(CoreTimeEvent.scala:62)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:457)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:456)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-05-22 01:09:47,244 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - application requested: default params: Map()
+2025-05-22 01:09:47,245 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - Creating Application: default
+2025-05-22 01:09:47,245 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - remoteAddress 0:0:0:0:0:0:0:1
+2025-05-22 01:09:47,245 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - host          localhost:8080
+2025-05-22 01:09:47,245 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - uri           /app/ws/default
+2025-05-22 01:09:47,251 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.ClassNotFoundException: com.webares.webares.HelloApplication
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at simplefx.util.ReflectionUtil.loadClass(ReflectionUtil.scala:38)
+	at simplefx.util.ReflectionUtil.callNew(ReflectionUtil.scala:103)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:109)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:95)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:61)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:43)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:178)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$handleFirstClientMessage$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:84)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$3.run(CoreTimeEvent.scala:62)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:457)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:456)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-05-22 01:09:49,261 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - application requested: default params: Map()
+2025-05-22 01:09:49,261 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - Creating Application: default
+2025-05-22 01:09:49,261 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - remoteAddress 0:0:0:0:0:0:0:1
+2025-05-22 01:09:49,262 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - host          localhost:8080
+2025-05-22 01:09:49,262 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - uri           /app/ws/default
+2025-05-22 01:09:49,268 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.ClassNotFoundException: com.webares.webares.HelloApplication
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at simplefx.util.ReflectionUtil.loadClass(ReflectionUtil.scala:38)
+	at simplefx.util.ReflectionUtil.callNew(ReflectionUtil.scala:103)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:109)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:95)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:61)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:43)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:178)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$handleFirstClientMessage$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:84)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$3.run(CoreTimeEvent.scala:62)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:457)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:456)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-05-22 01:09:51,281 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - application requested: default params: Map()
+2025-05-22 01:09:51,281 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - Creating Application: default
+2025-05-22 01:09:51,281 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - remoteAddress 0:0:0:0:0:0:0:1
+2025-05-22 01:09:51,281 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - host          localhost:8080
+2025-05-22 01:09:51,281 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - uri           /app/ws/default
+2025-05-22 01:09:51,289 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.ClassNotFoundException: com.webares.webares.HelloApplication
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at simplefx.util.ReflectionUtil.loadClass(ReflectionUtil.scala:38)
+	at simplefx.util.ReflectionUtil.callNew(ReflectionUtil.scala:103)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:109)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:95)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:61)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:43)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:178)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$handleFirstClientMessage$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:84)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$3.run(CoreTimeEvent.scala:62)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:457)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:456)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-05-22 01:09:53,299 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - application requested: default params: Map()
+2025-05-22 01:09:53,299 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - Creating Application: default
+2025-05-22 01:09:53,299 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - remoteAddress 0:0:0:0:0:0:0:1
+2025-05-22 01:09:53,299 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - host          localhost:8080
+2025-05-22 01:09:53,299 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - uri           /app/ws/default
+2025-05-22 01:09:53,306 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.ClassNotFoundException: com.webares.webares.HelloApplication
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at simplefx.util.ReflectionUtil.loadClass(ReflectionUtil.scala:38)
+	at simplefx.util.ReflectionUtil.callNew(ReflectionUtil.scala:103)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:109)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:95)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:61)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:43)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:178)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$handleFirstClientMessage$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:84)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$3.run(CoreTimeEvent.scala:62)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:457)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:456)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-05-22 01:09:55,318 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - application requested: default params: Map()
+2025-05-22 01:09:55,318 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - Creating Application: default
+2025-05-22 01:09:55,319 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - remoteAddress 0:0:0:0:0:0:0:1
+2025-05-22 01:09:55,319 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - host          localhost:8080
+2025-05-22 01:09:55,319 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - uri           /app/ws/default
+2025-05-22 01:09:55,325 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.ClassNotFoundException: com.webares.webares.HelloApplication
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at simplefx.util.ReflectionUtil.loadClass(ReflectionUtil.scala:38)
+	at simplefx.util.ReflectionUtil.callNew(ReflectionUtil.scala:103)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:109)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:95)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:61)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:43)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:178)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$handleFirstClientMessage$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:84)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$3.run(CoreTimeEvent.scala:62)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:457)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:456)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-05-22 01:09:56,259 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - application requested: default params: Map()
+2025-05-22 01:09:56,259 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - Creating Application: default
+2025-05-22 01:09:56,259 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - remoteAddress 0:0:0:0:0:0:0:1
+2025-05-22 01:09:56,259 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - host          localhost:8080
+2025-05-22 01:09:56,259 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - uri           /app/ws/default
+2025-05-22 01:09:56,269 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.ClassNotFoundException: com.webares.webares.HelloApplication
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at simplefx.util.ReflectionUtil.loadClass(ReflectionUtil.scala:38)
+	at simplefx.util.ReflectionUtil.callNew(ReflectionUtil.scala:103)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:109)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:95)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:61)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:43)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:178)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$handleFirstClientMessage$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:84)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$3.run(CoreTimeEvent.scala:62)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:457)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:456)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-05-22 01:11:36,435 [INFO] from com.jpro.activity in scala-execution-context-global-36 - Starting the server
+2025-05-22 01:11:36,440 [INFO] from com.jpro.internal.server.JProInitializer$ in scala-execution-context-global-36 -  *** Starting JPro: https://www.jpro.one/ ***
+2025-05-22 01:11:36,440 [INFO] from com.jpro.internal.server.JProInitializer$ in scala-execution-context-global-36 - OS: Windows 10
+2025-05-22 01:11:36,468 [INFO] from com.jpro.internal.server.JProInitializer$ in scala-execution-context-global-36 - JPro: 2024.4.1
+2025-05-22 01:11:36,468 [INFO] from com.jpro.internal.server.JProInitializer$ in scala-execution-context-global-36 - Java version: 21.0.5
+2025-05-22 01:11:36,469 [INFO] from com.jpro.internal.server.JProInitializer$ in scala-execution-context-global-36 - JVM: 21.0.5 BellSoft
+2025-05-22 01:11:36,473 [INFO] from com.jpro.internal.server.JProInitializer$ in scala-execution-context-global-36 - JavaFX jar: file:/C:/Users/kenan/.m2/repository/org/openjfx/javafx-graphics/23.0.1-jpro/javafx-graphics-23.0.1-jpro-win.jar
+2025-05-22 01:11:36,476 [INFO] from com.jpro.internal.server.JProInitializer$ in scala-execution-context-global-36 - Configuring logging from url: 'jar:file:/C:/Users/kenan/.m2/repository/one/jpro/jpro-server_2.12/2024.4.1/jpro-server_2.12-2024.4.1.jar!/logback-jpro-default.xml'
+2025-05-22 01:11:37,346 [INFO] from com.jpro.internal.server.JProInitializer$ in JavaFX Application Thread - JavaFX version: 23.0.1-jpro+0
+2025-05-22 01:11:37,406 [INFO] from com.jpro.internal.server.JProInitializer$ in scala-execution-context-global-36 - finished init!
+2025-05-22 01:11:37,410 [INFO] from com.jpro.internal.server.JProInitializer$ in scala-execution-context-global-36 - [JPro] -> Server started: {start_time: 1747869096433, os_name: Windows 10, jpro_version: 2024.4.1}
+2025-05-22 01:11:37,450 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2025-05-22 01:11:38,091 [INFO] from play.api.Play in Thread-0 - Application started (Prod) (no global state)
+2025-05-22 01:11:38,624 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Enabling HTTP/2 on Akka HTTP server...
+2025-05-22 01:11:38,625 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Listening for HTTP on /[0:0:0:0:0:0:0:0]:8080
+2025-05-22 01:11:39,902 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - application requested: default params: Map()
+2025-05-22 01:11:39,905 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - Creating Application: default
+2025-05-22 01:11:39,908 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - remoteAddress 0:0:0:0:0:0:0:1
+2025-05-22 01:11:39,908 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - host          localhost:8080
+2025-05-22 01:11:39,908 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - uri           /app/ws/default
+2025-05-22 01:11:40,191 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - [JPro] -> View created: {app_name: default, host_name: localhost:8080, instance_id: 511536533, browser: Google Chrome 136.0.0.0, browser_url: http://localhost:8080/, client_ip: 0:0:0:0:0:0:0:1}
+2025-05-22 01:11:41,493 [INFO] from com.jpro.internal.communicator.InstanceImpl in JavaFX Application Thread - [JPro] -> Instance created: {app_name: default, host_name: localhost:8080, instance_id: 511536533, browser: Google Chrome 136.0.0.0, browser_url: http://localhost:8080/, client_ip: 0:0:0:0:0:0:0:1}
+2025-05-22 01:15:17,152 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - [JPro] -> View closed: {app_name: default, host_name: localhost:8080, instance_id: 511536533, browser: Google Chrome 136.0.0.0, browser_url: http://localhost:8080/, client_ip: 0:0:0:0:0:0:0:1, reason: tab-closed}
+2025-05-22 01:15:17,157 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2025-05-22 01:15:17,157 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - Application closed:
+2025-05-22 01:15:17,171 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - startTime      : Thu May 22 01:15:17 CEST 2025      
+2025-05-22 01:15:17,171 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageLatency : 00:00:00.001 
+2025-05-22 01:15:17,171 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageJitter  : 00:00:00.000  
+2025-05-22 01:15:17,172 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateServer: 00:00:00.000
+2025-05-22 01:15:17,173 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateClient: 00:00:00.000
+2025-05-22 01:15:17,173 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - raw            : 2240404
+2025-05-22 01:15:17,173 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - zipped         : 467121
+2025-05-22 01:15:17,173 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2025-05-22 01:15:17,343 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - application requested: default params: Map()
+2025-05-22 01:15:17,343 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - Creating Application: default
+2025-05-22 01:15:17,343 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - remoteAddress 0:0:0:0:0:0:0:1
+2025-05-22 01:15:17,343 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - host          localhost:8080
+2025-05-22 01:15:17,344 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - uri           /app/ws/default
+2025-05-22 01:15:17,373 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - [JPro] -> View created: {app_name: default, host_name: localhost:8080, instance_id: 862795623, browser: Google Chrome 136.0.0.0, browser_url: http://localhost:8080/, client_ip: 0:0:0:0:0:0:0:1}
+2025-05-22 01:15:18,786 [INFO] from com.jpro.internal.communicator.InstanceImpl in JavaFX Application Thread - [JPro] -> Instance created: {app_name: default, host_name: localhost:8080, instance_id: 862795623, browser: Google Chrome 136.0.0.0, browser_url: http://localhost:8080/, client_ip: 0:0:0:0:0:0:0:1}
+2025-05-22 01:15:18,803 [INFO] from com.jpro.internal.communicator.InstanceImpl in JavaFX Application Thread - [JPro] -> Instance closed: {app_name: default, host_name: localhost:8080, instance_id: 511536533, browser: Google Chrome 136.0.0.0, browser_url: http://localhost:8080/, client_ip: 0:0:0:0:0:0:0:1, reason: close-tab-closed}
+2025-05-22 01:16:29,919 [INFO] from com.jpro.activity in scala-execution-context-global-36 - Starting the server
+2025-05-22 01:16:29,924 [INFO] from com.jpro.internal.server.JProInitializer$ in scala-execution-context-global-36 -  *** Starting JPro: https://www.jpro.one/ ***
+2025-05-22 01:16:29,924 [INFO] from com.jpro.internal.server.JProInitializer$ in scala-execution-context-global-36 - OS: Windows 10
+2025-05-22 01:16:29,965 [INFO] from com.jpro.internal.server.JProInitializer$ in scala-execution-context-global-36 - JPro: 2024.4.1
+2025-05-22 01:16:29,965 [INFO] from com.jpro.internal.server.JProInitializer$ in scala-execution-context-global-36 - Java version: 21.0.5
+2025-05-22 01:16:29,965 [INFO] from com.jpro.internal.server.JProInitializer$ in scala-execution-context-global-36 - JVM: 21.0.5 BellSoft
+2025-05-22 01:16:29,968 [INFO] from com.jpro.internal.server.JProInitializer$ in scala-execution-context-global-36 - JavaFX jar: file:/C:/Users/kenan/.m2/repository/org/openjfx/javafx-graphics/23.0.1-jpro/javafx-graphics-23.0.1-jpro-win.jar
+2025-05-22 01:16:29,970 [INFO] from com.jpro.internal.server.JProInitializer$ in scala-execution-context-global-36 - Configuring logging from url: 'jar:file:/C:/Users/kenan/.m2/repository/one/jpro/jpro-server_2.12/2024.4.1/jpro-server_2.12-2024.4.1.jar!/logback-jpro-default.xml'
+2025-05-22 01:16:31,336 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-5 - Slf4jLogger started
+2025-05-22 01:16:31,597 [INFO] from com.jpro.internal.server.JProInitializer$ in JavaFX Application Thread - JavaFX version: 23.0.1-jpro+0
+2025-05-22 01:16:31,658 [INFO] from com.jpro.internal.server.JProInitializer$ in scala-execution-context-global-36 - finished init!
+2025-05-22 01:16:31,677 [INFO] from com.jpro.internal.server.JProInitializer$ in scala-execution-context-global-36 - [JPro] -> Server started: {start_time: 1747869389918, os_name: Windows 10, jpro_version: 2024.4.1}
+2025-05-22 01:16:32,420 [INFO] from play.api.Play in Thread-0 - Application started (Prod) (no global state)
+2025-05-22 01:16:33,320 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Enabling HTTP/2 on Akka HTTP server...
+2025-05-22 01:16:33,320 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Listening for HTTP on /[0:0:0:0:0:0:0:0]:8080
+2025-05-22 01:16:35,073 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-5 - application requested: default params: Map(instanceID -> List(862795623))
+2025-05-22 01:16:35,078 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-5 - Creating Application: default
+2025-05-22 01:16:35,085 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-5 - remoteAddress 0:0:0:0:0:0:0:1
+2025-05-22 01:16:35,089 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-5 - host          localhost:8080
+2025-05-22 01:16:35,089 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-5 - uri           /app/ws/default?instanceID=862795623
+2025-05-22 01:16:35,773 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - [JPro] -> View created: {app_name: default, host_name: localhost:8080, instance_id: 1524166104, browser: Google Chrome 136.0.0.0, browser_url: http://localhost:8080/, client_ip: 0:0:0:0:0:0:0:1}
+2025-05-22 01:16:37,823 [INFO] from com.jpro.internal.communicator.InstanceImpl in JavaFX Application Thread - [JPro] -> Instance created: {app_name: default, host_name: localhost:8080, instance_id: 1524166104, browser: Google Chrome 136.0.0.0, browser_url: http://localhost:8080/, client_ip: 0:0:0:0:0:0:0:1}
+2025-05-22 01:20:49,826 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - application requested: default params: Map()
+2025-05-22 01:20:49,826 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - Creating Application: default
+2025-05-22 01:20:49,826 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - remoteAddress 0:0:0:0:0:0:0:1
+2025-05-22 01:20:49,827 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - host          localhost:8080
+2025-05-22 01:20:49,827 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - uri           /app/ws/default
+2025-05-22 01:20:49,844 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - [JPro] -> View created: {app_name: default, host_name: localhost:8080, instance_id: 738605453, browser: Google Chrome 136.0.0.0, browser_url: http://localhost:8080/, client_ip: 0:0:0:0:0:0:0:1}
+2025-05-22 01:20:50,931 [INFO] from com.jpro.internal.communicator.InstanceImpl in JavaFX Application Thread - [JPro] -> Instance created: {app_name: default, host_name: localhost:8080, instance_id: 738605453, browser: Google Chrome 136.0.0.0, browser_url: http://localhost:8080/, client_ip: 0:0:0:0:0:0:0:1}
+2025-05-22 01:21:03,025 [INFO] from com.jpro.activity in scala-execution-context-global-36 - Starting the server
+2025-05-22 01:21:03,028 [INFO] from com.jpro.internal.server.JProInitializer$ in scala-execution-context-global-36 -  *** Starting JPro: https://www.jpro.one/ ***
+2025-05-22 01:21:03,028 [INFO] from com.jpro.internal.server.JProInitializer$ in scala-execution-context-global-36 - OS: Windows 10
+2025-05-22 01:21:03,059 [INFO] from com.jpro.internal.server.JProInitializer$ in scala-execution-context-global-36 - JPro: 2024.4.1
+2025-05-22 01:21:03,059 [INFO] from com.jpro.internal.server.JProInitializer$ in scala-execution-context-global-36 - Java version: 21.0.5
+2025-05-22 01:21:03,059 [INFO] from com.jpro.internal.server.JProInitializer$ in scala-execution-context-global-36 - JVM: 21.0.5 BellSoft
+2025-05-22 01:21:03,061 [INFO] from com.jpro.internal.server.JProInitializer$ in scala-execution-context-global-36 - JavaFX jar: file:/C:/Users/kenan/.m2/repository/org/openjfx/javafx-graphics/23.0.1-jpro/javafx-graphics-23.0.1-jpro-win.jar
+2025-05-22 01:21:03,063 [INFO] from com.jpro.internal.server.JProInitializer$ in scala-execution-context-global-36 - Configuring logging from url: 'jar:file:/C:/Users/kenan/.m2/repository/one/jpro/jpro-server_2.12/2024.4.1/jpro-server_2.12-2024.4.1.jar!/logback-jpro-default.xml'
+2025-05-22 01:21:04,511 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-6 - Slf4jLogger started
+2025-05-22 01:21:04,567 [INFO] from com.jpro.internal.server.JProInitializer$ in JavaFX Application Thread - JavaFX version: 23.0.1-jpro+0
+2025-05-22 01:21:04,644 [INFO] from com.jpro.internal.server.JProInitializer$ in scala-execution-context-global-36 - finished init!
+2025-05-22 01:21:04,650 [INFO] from com.jpro.internal.server.JProInitializer$ in scala-execution-context-global-36 - [JPro] -> Server started: {start_time: 1747869663023, os_name: Windows 10, jpro_version: 2024.4.1}
+2025-05-22 01:21:05,640 [INFO] from play.api.Play in Thread-0 - Application started (Prod) (no global state)
+2025-05-22 01:21:06,444 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Enabling HTTP/2 on Akka HTTP server...
+2025-05-22 01:21:06,445 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Listening for HTTP on /[0:0:0:0:0:0:0:0]:8080
+2025-05-22 01:21:08,256 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - application requested: default params: Map(instanceID -> List(738605453))
+2025-05-22 01:21:08,260 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - Creating Application: default
+2025-05-22 01:21:08,262 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - remoteAddress 0:0:0:0:0:0:0:1
+2025-05-22 01:21:08,264 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - host          localhost:8080
+2025-05-22 01:21:08,264 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - uri           /app/ws/default?instanceID=738605453
+2025-05-22 01:21:08,611 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - [JPro] -> View created: {app_name: default, host_name: localhost:8080, instance_id: 816502301, browser: Google Chrome 136.0.0.0, browser_url: http://localhost:8080/, client_ip: 0:0:0:0:0:0:0:1}
+2025-05-22 01:21:10,194 [INFO] from com.jpro.internal.communicator.InstanceImpl in JavaFX Application Thread - [JPro] -> Instance created: {app_name: default, host_name: localhost:8080, instance_id: 816502301, browser: Google Chrome 136.0.0.0, browser_url: http://localhost:8080/, client_ip: 0:0:0:0:0:0:0:1}
+2025-05-22 01:24:56,418 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-11 - application requested: default params: Map(instanceID -> List(1524166104))
+2025-05-22 01:24:56,419 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-11 - Creating Application: default
+2025-05-22 01:24:56,419 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-11 - remoteAddress 0:0:0:0:0:0:0:1
+2025-05-22 01:24:56,419 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-11 - host          localhost:8080
+2025-05-22 01:24:56,419 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-11 - uri           /app/ws/default?instanceID=1524166104
+2025-05-22 01:24:56,438 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - [JPro] -> View created: {app_name: default, host_name: localhost:8080, instance_id: 321778560, browser: Google Chrome 136.0.0.0, browser_url: http://localhost:8080/, client_ip: 0:0:0:0:0:0:0:1}
+2025-05-22 01:24:57,890 [INFO] from com.jpro.internal.communicator.InstanceImpl in JavaFX Application Thread - [JPro] -> Instance created: {app_name: default, host_name: localhost:8080, instance_id: 321778560, browser: Google Chrome 136.0.0.0, browser_url: http://localhost:8080/, client_ip: 0:0:0:0:0:0:0:1}
+2025-05-22 01:25:04,532 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - [JPro] -> View closed: {app_name: default, host_name: localhost:8080, instance_id: 816502301, browser: Google Chrome 136.0.0.0, browser_url: http://localhost:8080/, client_ip: 0:0:0:0:0:0:0:1, reason: tab-closed}
+2025-05-22 01:25:04,536 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2025-05-22 01:25:04,536 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - Application closed:
+2025-05-22 01:25:04,546 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - startTime      : Thu May 22 01:25:04 CEST 2025      
+2025-05-22 01:25:04,547 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageLatency : 00:00:00.032 
+2025-05-22 01:25:04,547 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageJitter  : 00:00:00.052  
+2025-05-22 01:25:04,550 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateServer: 00:00:00.000
+2025-05-22 01:25:04,554 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateClient: 00:00:00.000
+2025-05-22 01:25:04,554 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - raw            : 272246
+2025-05-22 01:25:04,554 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - zipped         : 77821
+2025-05-22 01:25:04,554 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2025-05-22 01:25:05,534 [INFO] from com.jpro.internal.communicator.InstanceImpl in JavaFX Application Thread - [JPro] -> Instance closed: {app_name: default, host_name: localhost:8080, instance_id: 816502301, browser: Google Chrome 136.0.0.0, browser_url: http://localhost:8080/, client_ip: 0:0:0:0:0:0:0:1, reason: close-tab-closed}
+2025-05-22 01:26:41,446 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - [JPro] -> View closed: {app_name: default, host_name: localhost:8080, instance_id: 321778560, browser: Google Chrome 136.0.0.0, browser_url: http://localhost:8080/, client_ip: 0:0:0:0:0:0:0:1, reason: tab-closed}
+2025-05-22 01:26:41,447 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2025-05-22 01:26:41,447 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - Application closed:
+2025-05-22 01:26:41,448 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - startTime      : Thu May 22 01:26:41 CEST 2025      
+2025-05-22 01:26:41,448 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageLatency : 00:00:00.003 
+2025-05-22 01:26:41,448 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageJitter  : 00:00:00.002  
+2025-05-22 01:26:41,448 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateServer: 00:00:00.000
+2025-05-22 01:26:41,448 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateClient: 00:00:00.000
+2025-05-22 01:26:41,448 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - raw            : 340049
+2025-05-22 01:26:41,448 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - zipped         : 101422
+2025-05-22 01:26:41,448 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2025-05-22 01:26:42,449 [INFO] from com.jpro.internal.communicator.InstanceImpl in JavaFX Application Thread - [JPro] -> Instance closed: {app_name: default, host_name: localhost:8080, instance_id: 321778560, browser: Google Chrome 136.0.0.0, browser_url: http://localhost:8080/, client_ip: 0:0:0:0:0:0:0:1, reason: close-tab-closed}

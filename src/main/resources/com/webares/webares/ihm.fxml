@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.webares.webares.Controller">
+   <children>
+      <Rectangle fx:id="bg" height="1080.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1920.0" />
+      <AnchorPane prefHeight="1080.0" prefWidth="1920.0">
+         <children>
+            <Rectangle fx:id="cl0" fill="#0094ff" layoutX="586.0" layoutY="894.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="144.0" AnchorPane.leftAnchor="587.0" AnchorPane.rightAnchor="1189.0" />
+            <Rectangle fx:id="cl1" fill="#0094ff" layoutX="965.0" layoutY="315.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="32.0" AnchorPane.leftAnchor="950.0" />
+            <Rectangle fx:id="cl2" fill="#0094ff" layoutX="965.0" layoutY="623.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="32.0" AnchorPane.leftAnchor="950.0" AnchorPane.rightAnchor="938.0" />
+            <Rectangle fx:id="cl3" fill="#0094ff" layoutX="965.0" layoutY="931.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="32.0" AnchorPane.leftAnchor="950.0" AnchorPane.rightAnchor="938.0" />
+            <Rectangle fx:id="cl11" fill="#0094ff" layoutX="949.0" layoutY="233.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" AnchorPane.leftAnchor="934.0" />
+            <Rectangle fx:id="cl22" fill="#0094ff" layoutX="949.0" layoutY="541.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" AnchorPane.leftAnchor="934.0" />
+            <Rectangle fx:id="cl33" fill="#0094ff" layoutX="949.0" layoutY="849.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" AnchorPane.leftAnchor="934.0" />
+            <Rectangle fx:id="cl00" fill="#0094ff" layoutX="1663.0" layoutY="993.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="65.0" AnchorPane.leftAnchor="1663.0" />
+            <Rectangle fx:id="stl11" fill="#a0a0a0" layoutX="990.0" layoutY="182.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" AnchorPane.leftAnchor="1133.0" />
+            <Rectangle fx:id="stl22" fill="#a0a0a0" layoutX="1000.0" layoutY="490.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" AnchorPane.leftAnchor="1133.0" />
+            <Rectangle fx:id="stl33" fill="#a0a0a0" layoutX="1010.0" layoutY="798.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="64.0" AnchorPane.leftAnchor="1133.0" />
+            <Rectangle fx:id="stl1" fill="#a0a0a0" layoutX="1149.0" layoutY="288.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="272.0" AnchorPane.leftAnchor="1133.0" />
+            <Rectangle fx:id="stl2" fill="#a0a0a0" layoutX="1149.0" layoutY="596.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="272.0" AnchorPane.leftAnchor="1133.0" />
+            <Rectangle fx:id="stl3" fill="#a0a0a0" layoutX="1149.0" layoutY="904.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="272.0" AnchorPane.leftAnchor="1133.0" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Immages/Template.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="1080.0" fitWidth="1920.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Immages/Compteur.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cr" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Immages/Core/Core1/CR.png" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="time" alignment="CENTER" contentDisplay="CENTER" layoutX="315.0" layoutY="87.0" prefHeight="66.0" prefWidth="142.0" text="00000000" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="926.0" AnchorPane.leftAnchor="316.0" AnchorPane.rightAnchor="1464.0" AnchorPane.topAnchor="88.0">
+               <font>
+                  <Font name="Arial" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="tmp0" alignment="CENTER" contentDisplay="CENTER" layoutX="80.0" layoutY="86.0" prefHeight="66.0" prefWidth="142.0" text="00000000" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="926.0" AnchorPane.leftAnchor="77.0" AnchorPane.rightAnchor="1703.0" AnchorPane.topAnchor="88.0">
+               <font>
+                  <Font name="Arial" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="psi0" alignment="CENTER" contentDisplay="CENTER" layoutX="79.0" layoutY="195.0" prefHeight="66.0" prefWidth="142.0" text="00000000" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="818.0" AnchorPane.leftAnchor="77.0" AnchorPane.rightAnchor="1703.0" AnchorPane.topAnchor="196.0">
+               <font>
+                  <Font name="Arial" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="i" alignment="CENTER" contentDisplay="CENTER" layoutX="315.0" layoutY="194.0" prefHeight="66.0" prefWidth="142.0" text="00000000" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="818.0" AnchorPane.leftAnchor="316.0" AnchorPane.rightAnchor="1464.0" AnchorPane.topAnchor="196.0">
+               <font>
+                  <Font name="Arial" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="tmp1" alignment="CENTER" contentDisplay="CENTER" layoutX="73.0" layoutY="347.0" prefHeight="66.0" prefWidth="142.0" text="00000000" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="668.0" AnchorPane.leftAnchor="77.0" AnchorPane.rightAnchor="1703.0" AnchorPane.topAnchor="346.0">
+               <font>
+                  <Font name="Arial" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="tmp2" alignment="CENTER" contentDisplay="CENTER" layoutX="77.0" layoutY="455.0" prefHeight="66.0" prefWidth="142.0" text="00000000" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="559.0" AnchorPane.leftAnchor="77.0" AnchorPane.rightAnchor="1703.0" AnchorPane.topAnchor="455.0">
+               <font>
+                  <Font name="Arial" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="tmp3" alignment="CENTER" contentDisplay="CENTER" layoutX="77.0" layoutY="455.0" prefHeight="66.0" prefWidth="142.0" text="00000000" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="452.0" AnchorPane.leftAnchor="77.0" AnchorPane.rightAnchor="1703.0" AnchorPane.topAnchor="562.0">
+               <font>
+                  <Font name="Arial" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="psi1" alignment="CENTER" contentDisplay="CENTER" layoutX="319.0" layoutY="344.0" prefHeight="66.0" prefWidth="142.0" text="00000000" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="668.0" AnchorPane.leftAnchor="316.0" AnchorPane.rightAnchor="1464.0" AnchorPane.topAnchor="346.0">
+               <font>
+                  <Font name="Arial" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="psi2" alignment="CENTER" contentDisplay="CENTER" layoutX="319.0" layoutY="452.0" prefHeight="66.0" prefWidth="142.0" text="00000000" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="559.0" AnchorPane.leftAnchor="316.0" AnchorPane.rightAnchor="1464.0" AnchorPane.topAnchor="455.0">
+               <font>
+                  <Font name="Arial" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="psi3" alignment="CENTER" contentDisplay="CENTER" layoutX="319.0" layoutY="560.0" prefHeight="66.0" prefWidth="142.0" text="00000000" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="452.0" AnchorPane.leftAnchor="316.0" AnchorPane.rightAnchor="1464.0" AnchorPane.topAnchor="562.0">
+               <font>
+                  <Font name="Arial" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="kw1" alignment="CENTER" contentDisplay="CENTER" layoutX="312.0" layoutY="688.0" prefHeight="66.0" prefWidth="142.0" text="00000000" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="324.0" AnchorPane.leftAnchor="316.0" AnchorPane.rightAnchor="1464.0" AnchorPane.topAnchor="690.0">
+               <font>
+                  <Font name="Arial" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="kw2" alignment="CENTER" contentDisplay="CENTER" layoutX="312.0" layoutY="796.0" prefHeight="66.0" prefWidth="142.0" text="00000000" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="216.0" AnchorPane.leftAnchor="316.0" AnchorPane.rightAnchor="1464.0" AnchorPane.topAnchor="798.0">
+               <font>
+                  <Font name="Arial" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="kw3" alignment="CENTER" contentDisplay="CENTER" layoutX="312.0" layoutY="904.0" prefHeight="66.0" prefWidth="142.0" text="00000000" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="109.0" AnchorPane.leftAnchor="316.0" AnchorPane.rightAnchor="1464.0" AnchorPane.topAnchor="905.0">
+               <font>
+                  <Font name="Arial" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="a1" alignment="CENTER" contentDisplay="CENTER" layoutX="30.0" layoutY="30.0" prefHeight="66.0" prefWidth="142.0" text="00000000" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="324.0" AnchorPane.leftAnchor="77.0" AnchorPane.rightAnchor="1703.0" AnchorPane.topAnchor="690.0">
+               <font>
+                  <Font name="Arial" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="a2" alignment="CENTER" contentDisplay="CENTER" layoutX="30.0" layoutY="30.0" prefHeight="66.0" prefWidth="142.0" text="00000000" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="216.0" AnchorPane.leftAnchor="77.0" AnchorPane.rightAnchor="1703.0" AnchorPane.topAnchor="798.0">
+               <font>
+                  <Font name="Arial" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="a3" alignment="CENTER" contentDisplay="CENTER" layoutX="30.0" layoutY="30.0" prefHeight="66.0" prefWidth="142.0" text="00000000" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="109.0" AnchorPane.leftAnchor="77.0" AnchorPane.rightAnchor="1703.0" AnchorPane.topAnchor="905.0">
+               <font>
+                  <Font name="Arial" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Group>
+         <children>
+            <ImageView fx:id="cm" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@Immages/Core/Core1/CM.png" />
+               </image>
+            </ImageView>
+            <Group>
+               <children>
+                  <ImageView fx:id="clc1" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Immages/Circuit/Core/Collant/CLC1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="clc2" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@Immages/Circuit/Core/Collant/CLC2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="clc3" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@Immages/Circuit/Core/Collant/CLC3.png" />
+                     </image>
+                  </ImageView>
+                  <Group>
+                     <children>
+                        <ImageView fx:id="pc1" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@Immages/Circuit/Core/Pump_Core/PC1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="pc2" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@Immages/Circuit/Core/Pump_Core/PC2.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="pc3" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@Immages/Circuit/Core/Pump_Core/PC3.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Group>
+               </children>
+            </Group>
+            <Group>
+               <children>
+                  <ImageView fx:id="r" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@Immages/Core/Core1/R.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="cs1" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@Immages/Core/Core1/CS1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="cs2" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@Immages/Core/Core1/CS2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="cs3" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@Immages/Core/Core1/CS3.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+         </children>
+      </Group>
+      <Group>
+         <children>
+            <Group>
+               <children>
+                  <ImageView fx:id="clt0" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@Immages/Circuit/Turbine/Collant/CLT0.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="clt1" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@Immages/Circuit/Turbine/Collant/CLT1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="clt2" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@Immages/Circuit/Turbine/Collant/CLT2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="clt3" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@Immages/Circuit/Turbine/Collant/CLT3.png" />
+                     </image>
+                  </ImageView>
+                  <Group>
+                     <children>
+                        <ImageView fx:id="pt1" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@Immages/Circuit/Turbine/Pump_Turbine/PT1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="pt2" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@Immages/Circuit/Turbine/Pump_Turbine/PT2.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="pt3" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@Immages/Circuit/Turbine/Pump_Turbine/PT3.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Group>
+               </children>
+            </Group>
+            <Group>
+               <children>
+                  <ImageView fx:id="sg1" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@Immages/Circuit/Turbine/SG/SG1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="sg2" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@Immages/Circuit/Turbine/SG/SG2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="sg3" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@Immages/Circuit/Turbine/SG/SG3.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <Group>
+               <children>
+                  <ImageView fx:id="vmscv1" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@Immages/Circuit/Turbine/Vane_MSCV/VMSCV1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="vmscv2" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@Immages/Circuit/Turbine/Vane_MSCV/VMSCV2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="vmscv3" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@Immages/Circuit/Turbine/Vane_MSCV/VMSCV3.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <Group>
+               <children>
+                  <ImageView fx:id="mscv1" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@Immages/Circuit/Turbine/MSCV/MSCV1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="mscv2" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@Immages/Circuit/Turbine/MSCV/MSCV2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="mscv3" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@Immages/Circuit/Turbine/MSCV/MSCV3.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <AnchorPane prefHeight="1080.0" prefWidth="1920.0">
+               <children>
+                  <ImageView fx:id="tc1" fitHeight="64.0" fitWidth="64.0" layoutX="1493.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="1494.0" AnchorPane.rightAnchor="363.0">
+                     <image>
+                        <Image url="@Immages/Elec/Turbine/TC.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="tc2" fitHeight="64.0" fitWidth="64.0" layoutX="1494.0" layoutY="520.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="1494.0" AnchorPane.rightAnchor="362.0">
+                     <image>
+                        <Image url="@Immages/Elec/Turbine/TC.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="tc3" fitHeight="64.0" fitWidth="64.0" layoutX="1493.0" layoutY="828.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="1494.0" AnchorPane.rightAnchor="363.0">
+                     <image>
+                        <Image url="@Immages/Elec/Turbine/TC.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Group>
+               <children>
+                  <ImageView fx:id="vbp1" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@Immages/Circuit/Turbine/Vane_BP/VBP1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="vbp2" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@Immages/Circuit/Turbine/Vane_BP/VBP2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="vbp3" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@Immages/Circuit/Turbine/Vane_BP/VBP3.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <Group>
+               <children>
+                  <ImageView fx:id="bp1" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@Immages/Circuit/Turbine/BP/BP1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="bp2" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@Immages/Circuit/Turbine/BP/BP2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="bp3" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@Immages/Circuit/Turbine/BP/BP3.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+         </children>
+      </Group>
+      <Group>
+         <children>
+            <Group layoutX="961.0" layoutY="541.0">
+               <children>
+                  <ImageView fx:id="tv1" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@Immages/Elec/Turbine/TV/TV1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="tv2" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@Immages/Elec/Turbine/TV/TV2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="tv3" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@Immages/Elec/Turbine/TV/TV3.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <Group layoutX="961.0" layoutY="541.0">
+               <children>
+                  <ImageView fx:id="te1" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@Immages/Elec/Transformater/TE1_ON.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="te2" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@Immages/Elec/Transformater/TE2_ON.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="te3" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@Immages/Elec/Transformater/TE3_ON.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+         </children>
+      </Group>
+   </children>
+</StackPane>
