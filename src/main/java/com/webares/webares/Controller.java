@@ -44,6 +44,7 @@ public class Controller implements Initializable {
     private AudioClip shutdown, nominal, maximal, start, stop, fullstart, circulate1, circulate2, reactive1, reactive2, integrity1, integrity2, integrity3, yellow, red, meltdown, boom;
     private boolean bcirculate = false, bnominal = false, bmaximal = false, bturbine = false, breactive = false, bintegrity1 = false, bintegrity2 = false, bintegrity3 = false, bboom = false;
     public boolean bautomate = false;
+    private WebAPI api;
     private Controller2 controller2;
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -82,7 +83,7 @@ public class Controller implements Initializable {
                 corner.setManaged(false);
             }
         });
-        WebAPI api = new WebAPI(this);
+        api = new WebAPI(this);
         controller2 = new Controller2(this,api);
         api.setController2(controller2);
         api.webgetter(true);
@@ -233,17 +234,19 @@ public class Controller implements Initializable {
                 }
             }
         }
-        if (i1_1 < 75 && i1_1 >= 70.0) {
+        if (i1_1 < 99 && i1_1 >= 98.0) {
             if (!bintegrity1) {
                 integrity1.play();
                 bintegrity1 = true;
             }
             if (!yellow.isPlaying() && !integrity1.isPlaying() && !integrity2.isPlaying()) yellow.play();
-        } else if (i1_1 < 70 && i1_1 >= 50.0) {
+        } else if (i1_1 < 98 && i1_1 >= 50.0) {
             if (!bintegrity2) {
                 yellow.stop();
                 integrity1.stop();
                 integrity2.play();
+                automate.setSelected(false);
+                api.postVariable("CORE_SCRAM_BUTTON", "true");
                 bintegrity2 = true;
             }
             if (!yellow.isPlaying() && !integrity2.isPlaying() && !integrity3.isPlaying()) yellow.play();
@@ -583,9 +586,9 @@ public class Controller implements Initializable {
 
 
 // Clignotement interface en cas de problème d'Intégrité
-        if (integrity < 75.0 && integrity >= 70.0) {
+        if (integrity < 99 && integrity >= 98) {
             jaune.play();
-        } else if (integrity < 70 && integrity >= 1) {
+        } else if (integrity < 98 && integrity >= 1) {
             jaune.stop();
             rouge.play();
         } else if (integrity == 0) {
