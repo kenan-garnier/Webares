@@ -2,6 +2,8 @@
 
 <?import javafx.scene.Group?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleButton?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -138,7 +140,7 @@
             </ImageView>
             <Group>
                <children>
-                  <ImageView fx:id="clc1" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="clc1" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
                         <Image url="@Immages/Circuit/Core/Collant/CLC1.png" />
                      </image>
@@ -403,5 +405,19 @@
             </Group>
          </children>
       </Group>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ToggleButton fx:id="automate" mnemonicParsing="false" text="Automate" textFill="RED" AnchorPane.bottomAnchor="1020.0" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="1666.0" AnchorPane.topAnchor="30.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </ToggleButton>
+            <TextArea fx:id="logsautomate" prefHeight="144.0" prefWidth="588.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="506.0" AnchorPane.rightAnchor="826.0" AnchorPane.topAnchor="936.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </TextArea>
+         </children>
+      </AnchorPane>
    </children>
 </StackPane>

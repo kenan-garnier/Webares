@@ -6,18 +6,26 @@ import javafx.animation.PauseTransition;
 import javafx.animation.Timeline;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.control.Label;
+import javafx.scene.control.ScrollBar;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.ToggleButton;
 import javafx.scene.image.ImageView;
 import javafx.scene.media.AudioClip;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import javafx.util.Duration;
+
+import java.net.URL;
 import java.text.DecimalFormat;
 import java.util.Objects;
+import java.util.ResourceBundle;
 import java.util.function.IntConsumer;
 
 
-public class Controller {
+public class Controller implements Initializable {
     private int pctrodes = 100, pctcl0 = 0, pctcl1 = 0, pctcl2 = 0, pctcl3 = 0, pctcl00, pctcl11 = 0, pctcl22 = 0, pctcl33 = 0, pctstl1 = 0, pctstl2 = 0, pctstl3 = 0, pctstl11 = 0, pctstl22 = 0, pctstl33 = 0;
     @FXML
     private ImageView r, cr, cm, cs1, cs2, cs3, pc1, pc2, pc3, clc1, clc2, clc3, pt1, pt2, pt3, clt0, clt1, clt2, clt3, sg1, sg2, sg3, vmscv1, vmscv2, vmscv3, mscv1, mscv2, mscv3, vbp1, vbp2, vbp3, bp1, bp2, bp3, tv1, tv2, tv3, te1, te2, te3;
@@ -29,15 +37,54 @@ public class Controller {
     public ImageView tc1, tc2, tc3;
     @FXML
     public Rectangle cl0, cl1, cl2, cl3,cl00, cl11, cl22, cl33, stl1, stl2, stl3, stl11, stl22, stl33;
+    public ToggleButton automate;
+    public TextArea logsautomate;
     private Timeline jaune, rouge, b1, b2, b3;
     private PauseTransition p2, p3;
     private AudioClip shutdown, nominal, maximal, start, stop, fullstart, circulate1, circulate2, reactive1, reactive2, integrity1, integrity2, integrity3, yellow, red, meltdown, boom;
     private boolean bcirculate = false, bnominal = false, bmaximal = false, bturbine = false, breactive = false, bintegrity1 = false, bintegrity2 = false, bintegrity3 = false, bboom = false;
-
-        /* To DO
-        * TOUTES les nouvelles valeurs du Google Sheets à implémenter avec le graphique en prime */
+    public boolean bautomate = false;
+    private Controller2 controller2;
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        logsautomate.setStyle(
+                "-fx-background-color: black;" +
+                "-fx-control-inner-background: black;" +
+                "-fx-text-fill: white;"
+        );
+        logsautomate.setText("Automate" + " \n" + "DISABLED");
+        automate.setStyle("-fx-text-fill: red;");
+        automate.setOnAction(event -> {
+            bautomate = automate.isSelected();
+            if (bautomate) {
+                automate.setStyle("-fx-text-fill: green;");
+                logsautomate.setText("Automate" + " \n" + "ENABLED");
+            }else{
+                automate.setStyle("-fx-text-fill: red;");
+                logsautomate.setText("Automate" + " \n" + "DISABLED");
+            }
+        });
+    }
     public void starter() {
+        Platform.runLater(() -> {
+            for (Node node : logsautomate.lookupAll(".scroll-bar")) {
+                if (node instanceof ScrollBar) {
+                    ScrollBar sb = (ScrollBar) node;
+                    sb.setOpacity(0);
+                    sb.setDisable(true);
+                    sb.setManaged(false);
+                }
+            }
+            Node corner = logsautomate.lookup(".corner");
+            if (corner != null) {
+                corner.setOpacity(0);
+                corner.setDisable(true);
+                corner.setManaged(false);
+            }
+        });
         WebAPI api = new WebAPI(this);
+        controller2 = new Controller2(this,api);
+        api.setController2(controller2);
         api.webgetter(true);
         jaune = new Timeline(
                 new KeyFrame(Duration.ZERO, new KeyValue(bg.fillProperty(), Color.BLACK)),
@@ -248,9 +295,9 @@ public class Controller {
             }
         }
         if (
-                ((int) Math.floor(v1_1) == 22001 && hz1_1 == 50 && rpm1_1 == 3060) ||
-                        ((int) Math.floor(v2_1) == 22001 && hz2_1 == 50 && rpm2_1 == 3060) ||
-                        ((int) Math.floor(v3_1) == 22001 && hz3_1 == 50 && rpm3_1 == 3060)
+                ((int) Math.floor(v1_1) == 22001 && hz1_1 == 50 && rpm1_1 == 3060 && !te1_1) &&
+                ((int) Math.floor(v2_1) == 22001 && hz2_1 == 50 && rpm2_1 == 3060 && !te2_1) &&
+                ((int) Math.floor(v3_1) == 22001 && hz3_1 == 50 && rpm3_1 == 3060 && !te3_1)
         ) {
             if (!bmaximal) {
                 fullstart.play();

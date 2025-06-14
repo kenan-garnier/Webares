@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class DATA_Web {
     // https://nuclearesgame.blogspot.com/2023/11/webserver.html
-    public static final String BASE_URL = "http://192.168.1.12:8785/?Variable=";
+    public static final String BASE_URL = "http://192.168.1.12:8785/?Variable="; // put your adress
     public static final ArrayList<String> VARIABLES = new ArrayList<>(Arrays.asList(
             "TIME",
             "RODS_POS_ACTUAL",
@@ -40,6 +40,9 @@ public class DATA_Web {
             "COOLANT_SEC_0_PRESSURE",
             "COOLANT_SEC_1_PRESSURE",
             "COOLANT_SEC_2_PRESSURE",
+            "COOLANT_SEC_0_TEMPERATURE",
+            "COOLANT_SEC_1_TEMPERATURE",
+            "COOLANT_SEC_2_TEMPERATURE",
             "COOLANT_SEC_0_VOLUME",
             "COOLANT_SEC_1_VOLUME",
             "COOLANT_SEC_2_VOLUME",
@@ -74,7 +77,8 @@ public class DATA_Web {
             "GENERATOR_2_HERTZ",
             "GENERATOR_0_BREAKER",
             "GENERATOR_1_BREAKER",
-            "GENERATOR_2_BREAKER"
+            "GENERATOR_2_BREAKER",
+            "POWER_DEMAND_MW"
 
     ));
     public static Map<String, String> table = new HashMap<>(Map.ofEntries(
@@ -109,6 +113,9 @@ public class DATA_Web {
             Map.entry("COOLANT_SEC_0_PRESSURE", "120"),
             Map.entry("COOLANT_SEC_1_PRESSURE", "120"),
             Map.entry("COOLANT_SEC_2_PRESSURE", "120"),
+            Map.entry("COOLANT_SEC_0_TEMPERATURE", "0"),
+            Map.entry("COOLANT_SEC_1_TEMPERATURE", "0"),
+            Map.entry("COOLANT_SEC_2_TEMPERATURE", "0"),
             Map.entry("COOLANT_SEC_0_VOLUME", "60000.0"),
             Map.entry("COOLANT_SEC_1_VOLUME", "60000.0"),
             Map.entry("COOLANT_SEC_2_VOLUME", "60000.0"),
@@ -143,6 +150,7 @@ public class DATA_Web {
             Map.entry("GENERATOR_2_HERTZ","0.00"),
             Map.entry("GENERATOR_0_BREAKER","FALSE"),
             Map.entry("GENERATOR_1_BREAKER","FALSE"),
-            Map.entry("GENERATOR_2_BREAKER","FALSE")
+            Map.entry("GENERATOR_2_BREAKER","FALSE"),
+            Map.entry("POWER_DEMAND_MW","0")
     ));
 }
